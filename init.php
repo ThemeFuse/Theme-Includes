@@ -1,25 +1,5 @@
 <?php if ( ! defined( 'ABSPATH' ) ) die( 'Direct access forbidden.' );
 
-/**
- * Include theme files on right actions
- *
- * When the init() method is called, are included:
- * - /helpers.php
- * - /hooks.php
- * - /includes/*.php
- *
- * On 'wp_enqueue_scripts' action:
- * - /static.php
- *
- * On 'init' action:
- * - /posts.php
- * - /menus.php
- *
- * On 'widgets_init' action:
- * - /widgets/{hello-world}/class-widget-{Hello_World}.php
- *
- * @version 1.0.0
- */
 class Theme_Includes
 {
 	private static $rel_path = null;

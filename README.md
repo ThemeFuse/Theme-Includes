@@ -1,6 +1,11 @@
 # Theme Includes
 
-Include theme files or right actions.
+Include theme files on right actions.
+
+* `helpers.php`, `hooks.php`, `includes/*.php` are included right away
+* `static.php` is included on `wp_enqueue_scripts` action
+* `posts.php` and `menus.php` are included on `init` action
+* `widgets/{hello-world}/class-widget-{Hello_World}.php` are included on `widgets_init` action
 
 ## Install
 
