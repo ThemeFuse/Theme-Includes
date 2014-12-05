@@ -10,7 +10,7 @@ A way to organize theme files.
 ├-helpers.php    # Helper functions and classes
 ├─widgets/       # Theme widgets
 │ ├─{widget-name}/
-│ │ ├─class-fw-widget-{widget-name}.php # class Widget_{Widget_Name} extends WP_Widget { ... }
+│ │ ├─class-widget-{widget-name}.php # class Widget_{Widget_Name} extends WP_Widget { ... }
 │ │ └─views/
 │ │   ├─some-view.php
 │ │   └─...
