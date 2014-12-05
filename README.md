@@ -3,11 +3,11 @@
 A way to organize theme files.
 
 ```text
-├-static.php     # wp_enqueue_style() and wp_enqueue_script()
-├-posts.php      # register_post_type() and register_taxonomy()
-├-menus.php      # register_nav_menus()
-├-hooks.php      # add_filter() and add_action()
-├-helpers.php    # Helper functions and classes
+├─static.php     # wp_enqueue_style() and wp_enqueue_script()
+├─posts.php      # register_post_type() and register_taxonomy()
+├─menus.php      # register_nav_menus()
+├─hooks.php      # add_filter() and add_action()
+├─helpers.php    # Helper functions and classes
 ├─widgets/       # Theme widgets
 │ ├─{widget-name}/
 │ │ ├─class-widget-{widget-name}.php # class Widget_{Widget_Name} extends WP_Widget { ... }
