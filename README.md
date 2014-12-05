@@ -11,8 +11,8 @@ A way to organize theme files.
 ├─widgets/       # Theme widgets
 │ ├─{widget-name}/
 │ │ ├─class-widget-{widget-name}.php # class Widget_{Widget_Name} extends WP_Widget { ... }
-│ │ └─views/
-│ │   ├─some-view.php
+│ │ ├─some-file.php
+│ │ └─some-dir/
 │ │   └─...
 │ └─...
 └─includes/      # All .php files are auto included (no need to require_once)
