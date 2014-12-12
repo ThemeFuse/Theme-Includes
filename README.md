@@ -27,8 +27,8 @@ parent-theme/
 ## File Descriptions
 
 * `helpers.php`, `hooks.php`, `includes/*.php` are included right away
-* `static.php` is included on `wp_enqueue_scripts` action
-* `posts.php` and `menus.php` are included on `init` action
+* `static.php` is included on [`wp_enqueue_scripts`](http://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts) action
+* `posts.php` and `menus.php` are included on [`init`](http://codex.wordpress.org/Plugin_API/Action_Reference/init) action
 * `widgets/{hello-world}/class-widget-{Hello_World}.php` are included on `widgets_init` action
 
 ## Install
