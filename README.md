@@ -2,6 +2,8 @@
 
 A way to organize theme files.
 
+## Directory Structure
+
 ```text
 parent-theme/
 └─inc/
@@ -21,6 +23,8 @@ parent-theme/
     ├─some-file.php
     └─...
 ```
+
+## File Descriptions
 
 * `helpers.php`, `hooks.php`, `includes/*.php` are included right away
 * `static.php` is included on `wp_enqueue_scripts` action
