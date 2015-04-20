@@ -5,7 +5,7 @@ A way to organize theme files.
 ## Directory Structure
 
 ```text
-parent-theme/
+theme/
 └─inc/
   ├─static.php     # wp_enqueue_style() and wp_enqueue_script()
   ├─posts.php      # register_post_type() and register_taxonomy()
