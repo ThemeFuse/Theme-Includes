@@ -4,7 +4,7 @@ class Widget_Demo_Test extends WP_Widget
 {
 	public function __construct()
 	{
-		parent::WP_Widget( false, 'Demo Test', array( 'description' => '' ) );
+		parent::__construct( false, 'Demo Test', array( 'description' => '' ) );
 	}
 
 	/**
