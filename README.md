@@ -8,7 +8,6 @@ A way to organize theme files.
 theme/
 └─inc/
   ├─static.php     # wp_enqueue_style() and wp_enqueue_script()
-  ├─posts.php      # register_post_type() and register_taxonomy()
   ├─menus.php      # register_nav_menus()
   ├─hooks.php      # add_filter() and add_action()
   ├─helpers.php    # Helper functions and classes
@@ -28,7 +27,6 @@ theme/
 
 * `helpers.php`, `hooks.php`, `includes/*.php` are included right away
 * `static.php` is included on [`wp_enqueue_scripts`](http://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts) action
-* `posts.php` and `menus.php` are included on [`init`](http://codex.wordpress.org/Plugin_API/Action_Reference/init) action
 * `widgets/{hello-world}/class-widget-{Hello_World}.php` are included on `widgets_init` action
 
 ## Install

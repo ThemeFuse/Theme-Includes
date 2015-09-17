@@ -135,7 +135,6 @@ class Theme_Includes
 	public static function _action_init()
 	{
 		self::include_child_first('/menus.php');
-		self::include_child_first('/posts.php');
 	}
 
 	/**
