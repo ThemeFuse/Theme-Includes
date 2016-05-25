@@ -121,12 +121,31 @@ class Theme_Includes
 		}
 	}
 
+	public static function include_parent_first($rel_path)
+	{
+		{
+			$path = self::get_parent_path($rel_path);
+
+			if (file_exists($path)) {
+				self::include_isolated($path);
+			}
+		}
+
+		if (is_child_theme()) {
+			$path = self::get_child_path($rel_path);
+
+			if (file_exists($path)) {
+				self::include_isolated($path);
+			}
+		}
+	}
+
 	/**
 	 * @internal
 	 */
 	public static function _action_enqueue_scripts()
 	{
-		self::include_child_first('/static.php');
+		self::include_parent_first('/static.php');
 	}
 
 	/**
