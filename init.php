@@ -19,7 +19,12 @@ class Theme_Includes
 		/**
 		 * Include a file isolated, to not have access to current context variables
 		 */
-		self::$include_isolated_callable = create_function('$path', 'include $path;');
+        /**
+         * create_function has been DEPRECATED as of PHP 7.2.0
+         */
+        self::$include_isolated_callable = function($path){
+            include $path;
+        };
 
 		/**
 		 * Both frontend and backend
